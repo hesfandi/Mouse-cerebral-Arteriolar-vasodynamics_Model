@@ -35,7 +35,7 @@ This repository contains MATLAB scripts for hemodynamic-vasodynamic simulations:
 ## Acknowledgments  
 
 - **Hemodynamic Analysis Code**  
-  - Adapted from the C program developed by Prof. Timothy W. Secomb’s research group ([Secomb's Lab Website]([http://www.secomb.org](https://sites.arizona.edu/secomb/network-hemodynamics/)))  
+  - Adapted from the C program developed by Prof. Timothy W. Secomb’s research group ([Secomb's Lab Website](https://sites.arizona.edu/secomb/network-hemodynamics/))  
   - We sincerely thank Prof. Secomb’s group for making these valuable computational tools publicly available  
 
 - **SMC Electrophysiology Model**  
@@ -44,10 +44,10 @@ This repository contains MATLAB scripts for hemodynamic-vasodynamic simulations:
 
 - **SMC Contraction Mechanism Model**  
   - Adapted from work by Tim David’s research group  
-  - Available from their GitHub repository ([OO-NVU Model Repository]([https://github.com/BlueFern/OO-NVU/releases/tag/v2.1](https://github.com/ModelDBRepository/237604)))  
+  - Available from their GitHub repository ([OO-NVU Model Repository](https://github.com/ModelDBRepository/237604))  
 
 - **In-vivo LFP and Vasodynamics Data**  
-  - Data used in simulations sourced from [Mateo et al., 2017]([https://doi.org/your-doi-link](https://www.cell.com/neuron/fulltext/S0896-6273(17)30980-7))  
+  - Data used in simulations sourced from ([Mateo et al., 2017](https://www.cell.com/neuron/fulltext/S0896-6273(17)30980-7))  
   - We appreciate their provision of accurate concurrent electrical and optical measurements in awake mouse brains  
 
 ## Citation  
