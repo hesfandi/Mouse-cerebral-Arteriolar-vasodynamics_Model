@@ -4,7 +4,7 @@
 A computational model of mouse cerebral arteriolar vasodynamics under resting state and functional hyperemia.
 
 ## Overview  
-This repository contains MATLAB scripts for the in-silico simulation of mouse cerebral arterioles, as described in our article, **"Systems Biology Analysis of Vasodynamics in Mouse Cerebral Arterioles During Resting State and Functional Hyperemia."**
+This repository contains MATLAB scripts for the in-silico simulation of vasodynamics in mouse cerebral arterioles, as described in our article, **"Systems Biology Analysis of Vasodynamics in Mouse Cerebral Arterioles During Resting State and Functional Hyperemia."**
 
 ## Abstract  
 In our earlier work ([Cerebrovascular_Model](https://github.com/hesfandi/Cerebrovascular_Model)), we developed a coarsely segmented model of mouse cerebral vasculature, featuring a closed circulatory system and key morphological characteristics of mouse cerebrovasculature. In this repository, we extend that framework to simulate hemodynamic and vasodynamic interactions within the vessel network under both active and resting brain states.
