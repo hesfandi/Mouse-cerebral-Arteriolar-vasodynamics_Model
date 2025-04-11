@@ -1,64 +1,59 @@
-# Mouse-cerebral-Arteriolar-vasodynamics_Model
+# Mouse-Cerebral-Arteriolar-Vasodynamics_Model
 
-## About
+## About  
 A computational model of mouse cerebral arteriolar vasodynamics under resting state and functional hyperemia.
 
-## Overview
+## Overview  
 This repository contains MATLAB scripts for the in-silico simulation of mouse cerebral arterioles, as described in our article, **"Systems Biology Analysis of Vasodynamics in Mouse Cerebral Arterioles During Resting State and Functional Hyperemia."**
 
-## Abstract
-In our earlier work https://github.com/hesfandi/Cerebrovascular_Model, we developed a coarsely segmented model of mouse cerebral vasculature, featuring a closed circulatory system and key morphological characteristics of mouse cerebrovasculature. In this repository, we extend that framework to simulate hemodynamic and vasodynamic interactions within the vessel network under both active and resting brain states.
+## Abstract  
+In our earlier work ([Cerebrovascular_Model](https://github.com/hesfandi/Cerebrovascular_Model)), we developed a coarsely segmented model of mouse cerebral vasculature, featuring a closed circulatory system and key morphological characteristics of mouse cerebrovasculature. In this repository, we extend that framework to simulate hemodynamic and vasodynamic interactions within the vessel network under both active and resting brain states.
 
-## Project Description
-This repository includes hemodynamic-vasodynamic simulations:
-- **Micro-scale (cellular-level)**: Penetrating arteriole (PA) model simulations.
-- **Macro-scale**: Simulations in a network of coupled arteriolar segments.
+## Repository Contents  
+This repository contains MATLAB scripts for hemodynamic-vasodynamic simulations:  
+- **Micro-scale**: Simulating vasodynamics in a cellular-level model of a penetrating arteriole (PA)  
+- **Macro-scale**: Simulating vasodynamics in a network of coupled arteriolar segments  
+ 
 
-## Repository Contents
-This repository contains MATLAB scripts and associated data files for:
-- **Micro-scale simulations** (cellular-level penetrating arteriole model)
-- **Macro-scale simulations** (network of macro-scale coupled arteriolar segments)
+### Software Requirements  
+- MATLAB version: Tested on MATLAB 2020b (should be compatible with other MATLAB versions)  
+- No additional MATLAB toolbox dependencies required  
+- Simulations typically require 10–30 minutes on an up-to-date personal computer  
 
-## Usage Instructions
+### Folder Descriptions  
 
-### Software Requirements
-- MATLAB version: Tested on MATLAB 2020b (should be compatible with other MATLAB versions)
-- No additional MATLAB toolbox dependencies required.
-- Simulations are computationally intensive; powerful computing resources are strongly recommended.
+#### `Micro-scale/`  
+- **Vasomotion**: Scripts beginning with `Run_Vaso` simulate dampened oscillations in a cellular-level PA under varied mechanotransduction dynamics  
+- **Functional Hyperemia (FH)**:  
+  - Scripts beginning with `Run_IFH` simulate instantaneous neuronal activity (impulse response)  
+  - Scripts beginning with `Run_SFH` simulate sustained neuronal activity (step response)  
 
-### Folder Descriptions
+#### `Macro-scale/`  
+- `Run_Macro_Vaso` simulates undampened oscillations in a macro-scale model of coupled arteriolar segments  
+- Scripts beginning with `Run_Macro_NVC` simulate modulation of the myogenic response by in-vivo recorded LFP signals to predict NVC-mediated arteriolar vasodynamics  
 
-#### `Micro-scale/`
-Scripts for simulations at the cellular-level PA model:
-- **Vasomotion**: Spontaneous oscillations without neuronal input.
-- **Functional Hyperemia (FH)**: Simulations with neurovascular coupling pathways initiated after 150 seconds (once vasomotion oscillations dampen), simulating impulse or step neuronal activities.
+## Acknowledgments  
 
-#### `Macro-scale/`
-Scripts for simulations in a network of macro-scale coupled arteriolar segments. The algorithms corresponding to these simulations are fully described in the associated article.
+- **Hemodynamic Analysis Code**  
+  - Adapted from the C program developed by Prof. Timothy W. Secomb’s research group ([Secomb's Lab Website]([http://www.secomb.org](https://sites.arizona.edu/secomb/network-hemodynamics/)))  
+  - We sincerely thank Prof. Secomb’s group for making these valuable computational tools publicly available  
 
-## Acknowledgments
+- **SMC Electrophysiology Model**  
+  - Adapted primarily from Karlin et al. (2015), providing detailed equations and parameterization  
+  - We appreciate their comprehensive modeling approach  
 
-- **Hemodynamic Analysis Code**
-  - Adapted from the C program developed by Prof. Timothy W. Secomb’s research group ([Secomb's Lab Website](http://www.secomb.org)).
-  - We sincerely thank Prof. Secomb’s group for making these valuable computational tools publicly available.
+- **SMC Contraction Mechanism Model**  
+  - Adapted from work by Tim David’s research group  
+  - Available from their GitHub repository ([OO-NVU Model Repository]([https://github.com/BlueFern/OO-NVU/releases/tag/v2.1](https://github.com/ModelDBRepository/237604)))  
 
-- **SMC Electrophysiology Model**
-  - Adapted primarily from Karlin et al. (2015), providing detailed equations and parameterization.
-  - We appreciate their comprehensive descriptions and availability.
+- **In-vivo LFP and Vasodynamics Data**  
+  - Data used in simulations sourced from [Mateo et al., 2017]([https://doi.org/your-doi-link](https://www.cell.com/neuron/fulltext/S0896-6273(17)30980-7))  
+  - We appreciate their provision of accurate concurrent electrical and optical measurements in awake mouse brains  
 
-- **SMC Contraction Mechanism Model**
-  - Adapted from work by Tim David’s research group.
-  - Available on their GitHub repository ([OO-NVU Model Repository](https://github.com/BlueFern/OO-NVU/releases/tag/v2.1)).
-  - We acknowledge their generosity in providing public access to this model.
-
-- **In-vivo LFP and Vasodynamics Data**
-  - Data used in simulations sourced from [Author et al., 20XX](https://doi.org/your-doi-link).
-  - We appreciate their provision of accurate concurrent electrical and optical measurements in awake mouse brains.
-
-## Citation
+## Citation  
 If you use this repository or its components in your research, please cite our paper:
 
-> Esfandi et al., Systems Biology Analysis of Vasodynamics in Mouse Cerebral Arterioles During Resting State and Functional Hyperemia, submitted to eLife (2024).
+> Esfandi et al., *Systems Biology Analysis of Vasodynamics in Mouse Cerebral Arterioles During Resting State and Functional Hyperemia*, submitted to eLife (2024)
 
 ---
 
