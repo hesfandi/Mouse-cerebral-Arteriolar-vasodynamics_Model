@@ -53,7 +53,7 @@ This repository contains MATLAB scripts for hemodynamic-vasodynamic simulations:
 ## Citation  
 If you use this repository or its components in your research, please cite our paper:
 
-> Esfandi et al., *Systems Biology Analysis of Vasodynamics in Mouse Cerebral Arterioles During Resting State and Functional Hyperemia*, submitted to eLife (2024)
+> Esfandi et al., *Systems Biology Analysis of Vasodynamics in Mouse Cerebral Arterioles During Resting State and Functional Hyperemia*
 
 ---
 
